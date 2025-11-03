@@ -111,8 +111,10 @@ function sinCalculation() {
     else {
       result = Math.sin(calculation * Math.PI / 180);
     }
+    if (isNaN(result)) throw new Error();
   } catch (error) {
     alert('Syntax Error');
+    result = '';
   }
 
   inputElement.value = result;
@@ -132,8 +134,10 @@ function cosCalculation() {
     else {
       result = Math.cos(calculation * Math.PI / 180);
     }
+    if (isNaN(result)) throw new Error();
   } catch (error) {
     alert('Syntax Error');
+    result = '';
   }
 
   inputElement.value = result;
@@ -159,3 +163,4 @@ function percentageCalculation() {
   acButton.innerHTML = 'AC';
   justCalculated = true;
 }
+
