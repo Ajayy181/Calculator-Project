@@ -136,8 +136,11 @@ function sinCalculation() {
       //For the sin calculation what we are to do first is to take the calculation value first and then change it to radians before using Math.sin, so basically how to convert to radius is take our string (calculation) multiply it by Math.PI and divide it by 180.... then we save it to result...it's the same with cos
       result = Math.sin(calculation * Math.PI / 180);
     }
+    //I'm adding this line here just in a case we get NaN as an error for both sin and cos
+    if (isNaN(result)) throw new Error();
   } catch (error) {
     alert('Syntax Error');
+    result = '';
   }
 
   inputElement.value = result;
@@ -158,8 +161,10 @@ function cosCalculation() {
       //For the cos calculation what we are to do first is to take the calculation value first and then change it to radians before using Math.cos then we save it to result
       result = Math.cos(calculation * Math.PI / 180);
     }
+    if (isNaN(result)) throw new Error();
   } catch (error) {
     alert('Syntax Error');
+    result = '';
   }
 
   inputElement.value = result;
@@ -186,5 +191,6 @@ function percentageCalculation() {
   acButton.innerHTML = 'AC';
   justCalculated = true;
 }
+
 
 
