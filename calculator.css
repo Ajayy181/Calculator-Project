@@ -1,0 +1,106 @@
+body {
+  background-color: black;
+}
+
+button {
+  color: white;
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: transparent;
+  background-color: rgba(31, 29, 29, 0);
+  box-shadow: 0px 0px 6px grey;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+button:active {
+  opacity: 0.3;
+}
+
+.button-orange {
+  background-color: rgba(255, 166, 0, 0.855);
+  box-shadow: 0px 0px 6px rgba(255, 166, 0, 0.99);
+
+}
+
+.button-grey {
+  background-color: rgba(128, 128, 128, 0.338);
+  box-shadow: 0px 0px 6px rgb(128, 128, 128);
+}
+
+.all-button-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.all-button-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  margin-top: 13px;
+}
+
+.all-button-three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  margin-top: 13px;
+}
+
+.all-button-four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  margin-top: 13px;
+}
+
+.all-button-five {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  margin-top: 13px;
+}
+
+.input-div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.input-value {
+  width: 260px;
+  height: 100px;
+  font-size: 25px;
+  /* directs the text from the left to the right */
+  direction: ltr;
+  /* forces the text visual from the right */
+  text-align: right;
+  background-color: black;
+  border-style: solid;
+  border-width: 0px;
+  color: white;
+  font-family: monospace;
+}
+
+input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.input-value[type=number]::-webkit-inner-spin-button,
+.input-value[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

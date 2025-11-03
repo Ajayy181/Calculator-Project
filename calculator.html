@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Calculator Project</title>
+    <link rel="stylesheet" href="calculator.css">
+  </head>
+  <body>
+    <div class="input-div">
+      <input placeholder="0" class="input-value js-input-value">
+    </div>
+
+    <div class="all-button-one">
+      <button class="button-grey js-ac-button"></button>
+      <button class="button-grey" onclick="calculate('.')">.</button>
+      <button class="button-grey" onclick="percentageCalculation()">%</button>
+      <button class="button-orange" onclick="calculate(' ÷ ')">÷</button>
+    </div>
+    <div class="all-button-two">
+      <button onclick="calculate('7')">7</button>
+      <button onclick="calculate('8')">8</button>
+      <button onclick="calculate('9')">9</button>
+      <button class="button-orange" onclick="calculate(' x ')">x</button>
+    </div>
+    <div class="all-button-three">
+      <button onclick="calculate('4')">4</button>
+      <button onclick="calculate('5')">5</button>
+      <button onclick="calculate('6')">6</button>
+      <button class="button-orange" onclick="calculate(' - ')">-</button>
+    </div>
+    <div class="all-button-four">
+      <button onclick="calculate('1')">1</button>
+      <button onclick="calculate('2')">2</button>
+      <button onclick="calculate('3')">3</button>
+      <button class="button-orange" onclick="calculate(' + ')">+</button>
+    </div>
+    <div class="all-button-five">
+      <button onclick="calculate('0')">0</button>
+      <button onclick="cosCalculation()">cos</button>
+      <button onclick="sinCalculation()">SIN</button>
+      <button class="button-orange" 
+      onclick="displayCalculation();">=</button>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
